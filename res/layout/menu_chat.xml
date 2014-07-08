@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 本页面 由 点击菜单栏中的“聊天”按钮进入 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6" >
+
+    <ImageView
+        android:id="@+id/menu_chat_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/homeblog_setting_topbar" />
+
+    <Button
+        android:id="@+id/menu_chat_btn_backup"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="3dip"
+        android:background="@drawable/btn_backup" />
+
+    <TextView
+        android:id="@+id/menu_chat_topname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_marginTop="13dip"
+        android:layout_centerHorizontal="true"
+        android:text="聊天"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/menu_chat_btn_pletter"
+        android:layout_width="70dip"
+        android:layout_height="35dip"
+        android:layout_alignBottom="@+id/menu_chat_btn_backup"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dip"
+        android:layout_marginRight="8dip"
+        android:background="@drawable/btn_cancel"
+        android:text="写私信"
+        android:textColor="#FF000000"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/menu_chat_topblank"
+        android:layout_width="match_parent"
+        android:layout_height="10dip"
+        android:layout_below="@+id/menu_chat_topbar"
+        android:background="#e6e6e6" />
+    
+    <!-- 本listitem与消息通知首页中的私信通知listitem共用一个 -->
+
+    <ListView
+        android:id="@+id/menu_chat_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/menu_chat_topblank" >
+    </ListView>
+
+</RelativeLayout>

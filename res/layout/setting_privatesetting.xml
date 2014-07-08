@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6"
+    tools:context=".PrivateSetting" >
+
+    <ImageView
+        android:id="@+id/setting_private_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/homeblog_setting_topbar" />
+
+    <ImageView
+        android:id="@+id/setting_private_back"
+        android:layout_width="42dip"
+        android:layout_height="35dip"
+        android:layout_margin="5dip"
+        android:background="@drawable/setting_back_btn" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dip"
+        android:text="@string/setting_private"
+        android:textColor="#5b5b5b"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/setting_position_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setting_private_topbar"
+        android:layout_marginLeft="12dip"
+        android:layout_marginTop="10dip"
+        android:text="@string/setting_private_contact"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/setting_private_bar"
+        android:layout_width="match_parent"
+        android:layout_height="101dip"
+        android:layout_below="@id/setting_position_contact"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:background="@drawable/setting_item_bg" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/setting_private_bar"
+        android:layout_alignTop="@id/setting_private_bar"
+        android:layout_margin="13dip"
+        android:text="@string/setting_private_con_allowed"
+        android:textColor="#5b5b5b"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/setting_private_cont_onoff"
+        android:layout_width="75dip"
+        android:layout_height="35dip"
+        android:layout_alignRight="@id/setting_private_bar"
+        android:layout_alignTop="@id/setting_private_bar"
+        android:layout_margin="8dip"
+        android:background="@drawable/setting_on_btn"
+        android:clickable="true" />
+
+    <View
+        android:id="@+id/setting_private_v1"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_alignTop="@id/setting_private_bar"
+        android:layout_marginTop="50dip"
+        android:background="#e6e6e6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/setting_private_bar"
+        android:layout_alignTop="@id/setting_private_v1"
+        android:layout_margin="13dip"
+        android:text="@string/setting_private_phone_allowed"
+        android:textColor="#5b5b5b"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/setting_private_phone_onoff"
+        android:layout_width="75dip"
+        android:layout_height="35dip"
+        android:layout_alignRight="@id/setting_private_bar"
+        android:layout_alignTop="@id/setting_private_v1"
+        android:layout_margin="8dip"
+        android:background="@drawable/setting_on_btn"
+        android:clickable="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setting_private_bar"
+        android:layout_marginLeft="10dip"
+        android:text="@string/setting_private_phone_allowed_detail"
+        android:textColor="#a0a0a0"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/setting_position_who"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setting_private_bar"
+        android:layout_marginLeft="12dip"
+        android:layout_marginTop="30dip"
+        android:text="@string/setting_private_comment_who"
+        android:textSize="15sp" />
+
+    <Spinner
+        android:id="@+id/setting_private_who_comment"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_below="@id/setting_position_who"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:background="@drawable/setting_item_bg" />
+
+</RelativeLayout>

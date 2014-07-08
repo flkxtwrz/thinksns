@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dip" >
+
+    <ImageView
+        android:id="@+id/fans_bloger_pic"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_margin="10dip"
+        android:background="#000000" />
+
+    <ImageView
+        android:id="@+id/fans_bloger_addcare"
+        android:layout_width="80dip"
+        android:layout_height="30dip"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dip"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/finding_addcare" />
+    
+    <TextView
+        android:id="@+id/fans_bloger_pic_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dip"
+        android:layout_marginLeft="3dip"
+        android:layout_toRightOf="@id/fans_bloger_pic"
+        android:layout_toLeftOf="@id/fans_bloger_addcare"
+        android:layout_marginRight="5dip"
+        android:text="AAAAA"
+        android:textColor="#246183"
+        android:textSize="21sp" />
+
+    <ImageView
+        android:id="@+id/fans_sex"
+        android:layout_width="55dip"
+        android:layout_height="20dip"
+        android:layout_alignLeft="@id/fans_bloger_pic_name"
+        android:layout_below="@id/fans_bloger_pic_name"
+        android:background="@drawable/fans_sex_boy" />
+
+    <TextView
+        android:id="@+id/fans_bloger_fans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/fans_sex"
+        android:layout_marginLeft="5dip"
+        android:layout_toRightOf="@id/fans_sex"
+        android:text="粉丝"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/fans_intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/fans_bloger_pic_name"
+        android:layout_below="@id/fans_sex"
+        android:text="fasfasfasdfasfasf"
+        android:textColor="#a6a6a6"
+        android:textSize="17sp" />
+
+    
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6" >
+
+    <ImageView
+        android:id="@+id/channel_microblog_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/homeblog_setting_topbar" />
+
+    <Button
+        android:id="@+id/channel_microblog_btn_backup"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="3dip"
+        android:background="@drawable/btn_backup" />
+
+    <TextView
+        android:id="@+id/channel_microblog_topname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dip"
+        android:layout_centerHorizontal="true"
+        android:text="频道微博列表"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/channel_microblog_topblank"
+        android:layout_width="match_parent"
+        android:layout_height="5dip"
+        android:layout_below="@+id/channel_microblog_topbar"
+        android:background="#e6e6e6" />
+
+    <FrameLayout
+        android:id="@+id/channel_microblog_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/channel_microblog_topbar" >
+    </FrameLayout>
+
+</RelativeLayout>

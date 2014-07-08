@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff" >
+<RelativeLayout
+        android:id="@+id/state_detail_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/homeblog_topbar" >
+
+        <ImageView
+            android:id="@+id/state_detail_back"
+            android:layout_width="50dip"
+            android:layout_height="60dip"
+            android:layout_margin="5dip"
+            android:background="@drawable/state_detail_back" />
+
+        <TextView
+            android:id="@+id/homeblog_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="15dip"
+            android:text="详情"
+            android:textColor="#dfdfdf"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/homeblog_state_userpic"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_margin="10dip"
+        android:layout_below="@id/state_detail_rl"
+        android:background="#000000" />
+
+    <TextView
+        android:id="@+id/homeblog_state_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/homeblog_state_userpic"
+        android:layout_marginLeft="3dip"
+        android:layout_toRightOf="@id/homeblog_state_userpic"
+        android:text="AAAAAA"
+        android:textColor="#246183"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/homeblog_state_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/homeblog_state_userpic"
+        android:layout_alignLeft="@id/homeblog_state_username"
+        android:text="04-21 14:25"
+        android:textColor="#a6a6a6"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/homeblog_state_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/homeblog_state_userpic"
+        android:layout_marginLeft="5dip"
+        android:layout_toRightOf="@id/homeblog_state_date"
+        android:text="来自网站"
+        android:textColor="#a6a6a6"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/homeblog_state_contents"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/homeblog_state_userpic"
+        android:layout_below="@id/homeblog_state_userpic"
+        android:layout_marginRight="10dip"
+        android:layout_marginLeft="4dip"
+        android:text="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <!-- 图片状态， 如果有图片则显示，目前设置为gone -->
+
+    <ImageView
+        android:id="@+id/homeblog_state_photos"
+        android:layout_width="120dip"
+        android:layout_height="140dip"
+        android:layout_below="@id/homeblog_state_contents"
+        android:layout_marginLeft="30dip"
+        android:layout_marginTop="8dip"
+        android:background="#000000"
+        android:visibility="gone" />
+
+    <View 
+        android:id="@+id/fenge"
+        android:layout_width="fill_parent"
+        android:layout_height="10dip"
+        android:visibility="invisible"
+        android:layout_below="@id/homeblog_state_photos"/>
+    <!-- 转发状态的布局。已设为gone，需要时更改即可 -->
+
+    <RelativeLayout
+        android:id="@+id/homeblog_state_resend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/homeblog_state_photos"
+        android:layout_margin="10dip"
+        android:background="#ececec"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/homeblog_resend_userpic"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_margin="10dip"
+            android:background="#000000" />
+
+        <TextView
+            android:id="@+id/homeblog_resend_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/homeblog_resend_userpic"
+            android:layout_marginLeft="3dip"
+            android:layout_toRightOf="@id/homeblog_resend_userpic"
+            android:text="AAAAAA"
+            android:textColor="#246183"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/homeblog_resend_contents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/homeblog_resend_username"
+            android:layout_below="@id/homeblog_resend_username"
+            android:text="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+            android:textColor="#a6a6a6"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/homeblog_resend_photos"
+            android:layout_width="120dip"
+            android:layout_height="140dip"
+            android:layout_below="@id/homeblog_resend_contents"
+            android:layout_marginLeft="30dip"
+            android:layout_marginTop="8dip"
+            android:background="#000000" />
+
+        <View
+            android:id="@+id/vv"
+            android:layout_width="match_parent"
+            android:layout_height="13dip"
+            android:layout_below="@id/homeblog_resend_photos"
+            android:background="#00000000" />
+    </RelativeLayout>
+
+    
+    <LinearLayout
+        android:id="@+id/homeblog_listitem_funbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="2dip"
+        
+        android:background="@drawable/homeblog_listitem_funbar" >
+
+        <LinearLayout
+            android:id="@+id/homeblog_resend_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.12"
+            android:clickable="true" >
+
+            <ImageView
+                android:layout_width="26dip"
+                android:layout_height="26dip"
+                android:layout_margin="8dip"
+                android:background="@drawable/homeblog_resend_pic"
+                android:focusable="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:focusable="false"
+                android:text="@string/homeblog_listitem_resend"
+                android:textColor="#256284"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/homeblog_good_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:clickable="true" >
+
+            <ImageView
+                android:layout_width="26dip"
+                android:layout_height="26dip"
+                android:layout_margin="8dip"
+                android:background="@drawable/homeblog_good_pic"
+                android:focusable="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:focusable="false"
+                android:text="@string/homeblog_listitem_good"
+                android:textColor="#256284"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:focusable="false"
+                android:text="("
+                android:textColor="#256284"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/digg_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:focusable="false"
+                android:text="0"
+                android:textColor="#256284"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:focusable="false"
+                android:text=")"
+                android:textColor="#256284"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/homeblog_comment_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:clickable="true" >
+
+            <ImageView
+                android:layout_width="26dip"
+                android:layout_height="26dip"
+                android:layout_margin="8dip"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/homeblog_comment_pic"
+                android:focusable="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:focusable="false"
+                android:text="@string/homeblog_listitem_comment"
+                android:textColor="#256284"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/homeblog_collection_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.55"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="21dip"
+                android:layout_height="21dip"
+                android:layout_margin="10dip"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/homeblog_collection_pic"
+                android:focusable="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dip"
+                android:focusable="false"
+                android:text="@string/homeblog_listitem_collection"
+                android:textColor="#256284"
+                android:textSize="18sp" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/homeblog_more_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:clickable="true"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dip"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/homeblog_more_pic"
+                android:focusable="false" />
+            
+        </LinearLayout>
+    </LinearLayout>
+<!-- 评论list -->
+
+    <com.hudson.thinksns.diyview.xlistview.XListView
+        android:id="@+id/comment_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:layout_above="@id/homeblog_listitem_funbar"
+        android:layout_below="@id/homeblog_state_resend" />
+    
+    <RelativeLayout
+        android:id="@+id/comment_add_emotion"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" 
+        android:visibility="gone">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/comment_msg_send_rl"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_above="@id/comment_add_emotion"
+        android:background="@drawable/deploy_itembar_bg"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/comment_add_emotion_btn"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_marginLeft="2dip"
+            android:background="@drawable/deploy_btn_add" />
+
+        <ImageView
+            android:id="@+id/comment_send_btn"
+            android:layout_width="60dip"
+            android:layout_height="40dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/private_send_btn" />
+
+        <ImageView
+            android:id="@+id/comment_sendbar"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="3dip"
+            android:layout_toLeftOf="@id/comment_send_btn"
+            android:layout_toRightOf="@id/comment_add_emotion_btn"
+            android:background="@drawable/private_msg_sendbar" />
+
+        <EditText
+            android:id="@+id/comment_edittxt"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_marginLeft="4dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="8dip"
+            android:layout_toLeftOf="@id/comment_send_btn"
+            android:layout_toRightOf="@id/comment_add_emotion_btn"
+            android:background="#00000000" />
+    </RelativeLayout>
+
+</RelativeLayout>

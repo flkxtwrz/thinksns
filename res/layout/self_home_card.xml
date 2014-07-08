@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6" >
+
+    <ImageView
+        android:id="@+id/self_center_card_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bg_topbar" />
+
+    <Button
+        android:id="@+id/self_center_card_btn_backup"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="3dip"
+        android:background="@drawable/btn_backup" />
+
+    <Button
+        android:id="@+id/self_center_card_btn_tomenu"
+        android:layout_width="35dip"
+        android:layout_height="35dip"
+        android:layout_alignBottom="@+id/self_center_card_btn_backup"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dip"
+        android:layout_marginRight="8dip"
+        android:background="@drawable/btn_tomenu" />
+
+    <TextView
+        android:id="@+id/self_center_card_topname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/self_center_card_btn_tomenu"
+        android:layout_centerHorizontal="true"
+        android:text="@string/self_center_card_topname"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/self_center_card_topblank"
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:layout_below="@+id/self_center_card_topbar"
+        android:background="#e6e6e6" />
+
+    <!-- 生成二维码 -->
+
+    <ImageView
+        android:id="@+id/self_center_card_qrcord"
+        android:layout_width="250dip"
+        android:layout_height="250dip"
+        android:layout_below="@+id/self_center_card_topblank"
+        android:layout_centerHorizontal="true"
+        android:background="#FFFFFF" />
+
+    <View
+        android:id="@+id/self_center_card_dividingline"
+        android:layout_width="250dip"
+        android:layout_height="15dip"
+        android:layout_below="@+id/self_center_card_qrcord"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/blank_singleline" />
+
+    <TextView
+        android:id="@+id/self_center_card_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/self_center_card_dividingline"
+        android:layout_centerHorizontal="true"
+        android:text="带着脑袋带着心"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/self_center_card_instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/self_center_card_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dip"
+        android:text="@string/self_center_card_instructions"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+
+</RelativeLayout>

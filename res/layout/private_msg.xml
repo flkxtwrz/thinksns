@@ -1,0 +1,152 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PrivateMsg" >
+
+    <ImageView
+        android:id="@+id/private_msg_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/homeblog_setting_topbar" />
+
+    <ImageView
+        android:id="@+id/private_msg_back"
+        android:layout_width="42dip"
+        android:layout_height="35dip"
+        android:layout_margin="5dip"
+        android:background="@drawable/setting_back_btn" />
+
+    <TextView
+        android:id="@+id/hand_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dip"
+        android:text="万岁寿司"
+        android:textColor="#5b5b5b"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/private_msg_more"
+        android:layout_width="42dip"
+        android:layout_height="35dip"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dip"
+        android:background="@drawable/private_msg_more"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/private_msg_fun_ll"
+        android:layout_width="match_parent"
+        android:layout_height="25dip"
+        android:layout_below="@id/private_msg_topbar"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/private_msg_ignore"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="屏蔽" />
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="25dip"
+            android:background="#cdcdcd" />
+
+        <TextView
+            android:id="@+id/private_msg_ignore"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="访问主页" />
+    </LinearLayout>
+<View
+    android:id="@+id/v"
+    android:layout_below="@id/private_msg_fun_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#cdcdcd" />
+    <RelativeLayout
+        android:id="@+id/private_msg_add_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/private_msg_send_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_above="@id/private_msg_add_layout"
+        android:background="@drawable/deploy_itembar_bg" >
+
+        <ImageView
+            android:id="@+id/private_msg_add"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_marginLeft="2dip"
+            android:background="@drawable/deploy_btn_add" />
+
+        <ImageView
+            android:id="@+id/private_send_btn"
+            android:layout_width="60dip"
+            android:layout_height="40dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/private_send_btn" />
+         
+        <TextView 
+            android:text="发送"
+            android:layout_alignLeft="@id/private_send_btn"
+            android:layout_alignTop="@id/private_send_btn"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="7dip"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/private_msg_sendbar"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="3dip"
+            android:layout_toLeftOf="@id/private_send_btn"
+            android:layout_toRightOf="@id/private_msg_add"
+            android:background="@drawable/private_msg_sendbar" />
+
+        <EditText
+            android:id="@+id/private_msg_edittxt"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_marginLeft="4dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="8dip"
+            android:layout_toLeftOf="@id/private_send_btn"
+            android:layout_toRightOf="@id/private_msg_add"
+            android:background="#00000000" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/private_msg_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#00000000"
+        android:cacheColorHint="#00000000"
+        android:background="#00000000"
+        android:layout_above="@+id/private_msg_send_rl"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/v" >
+
+    </ListView>
+
+</RelativeLayout>

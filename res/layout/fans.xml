@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".Fans" >
+
+    <ImageView
+        android:id="@+id/fans_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/homeblog_topbar" />
+
+    <Button
+        android:id="@+id/fans_back"
+        android:layout_width="35dip"
+        android:layout_height="26dip"
+        android:layout_margin="10dip"
+        android:background="@drawable/fans_back" />
+
+    <TextView
+        android:id="@+id/fans_topbar_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dip"
+        android:textColor="#dfdfdf"
+        android:textSize="21sp" />
+
+    <ImageView
+        android:id="@+id/fans_find"
+        android:layout_width="26dip"
+        android:layout_height="26dip"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dip"
+        android:background="@drawable/fans_find"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/fans_item_choose"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dip" >
+
+            <RadioGroup
+                android:id="@+id/fans_group"
+                android:layout_width="fill_parent"
+                android:layout_height="80dip"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/fans_care"
+                    style="@style/radiobutton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/fans_care"
+                    android:gravity="center_horizontal" />
+
+                <RadioButton
+                    android:id="@+id/fans_fan"
+                    style="@style/radiobutton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/fans_fan"
+                    android:gravity="center_horizontal" />
+
+                <RadioButton
+                    android:id="@+id/fans_care_each"
+                    style="@style/radiobutton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/fans_care_each"
+                    android:gravity="center_horizontal" />
+            </RadioGroup>
+        </FrameLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/fans_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/fans_item_choose"
+        android:layout_below="@id/fans_topbar" >
+    </ListView>
+
+</RelativeLayout>

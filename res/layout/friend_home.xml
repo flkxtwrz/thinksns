@@ -1,0 +1,284 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".FriendHome" >
+
+    <View
+        android:id="@+id/vi"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#000000" />
+
+    <RelativeLayout
+        android:id="@+id/selfhome_topbar_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/homeblog_topbar" >
+
+        <Button
+            android:id="@+id/friend_back"
+            android:layout_width="34dip"
+            android:layout_height="34dip"
+            android:layout_margin="10dip"
+            android:background="@drawable/fans_back" />
+
+        <TextView
+            android:id="@+id/friend_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="15dip"
+            android:text="AAAAAAAA"
+            android:textColor="#dfdfdf"
+            android:textSize="21sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/firstlay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selfhome_topbar_rl"
+        android:background="#7fdbf0" >
+
+        <ImageView
+            android:id="@+id/friend_photo"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_margin="18dip"
+            android:background="#000000" />
+
+        <ImageView
+            android:id="@+id/friend_care_or"
+            android:layout_width="75dip"
+            android:layout_height="25dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/friend_photo"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/fans_cared" />
+
+        <TextView
+            android:id="@+id/friend_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/friend_photo"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="2dip"
+            android:layout_toLeftOf="@id/friend_care_or"
+            android:layout_toRightOf="@id/friend_photo"
+            android:text="Kobe"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/friend_private_msg"
+            android:layout_width="50dip"
+            android:layout_height="23dip"
+            android:layout_alignLeft="@id/friend_photo"
+            android:layout_below="@id/friend_photo"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/btn_cancel"
+            android:text="私信"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/friend_gender"
+            android:layout_width="58dip"
+            android:layout_height="23dip"
+            android:layout_alignLeft="@id/friend_name"
+            android:layout_below="@id/friend_name"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/fans_sex_boy" />
+
+        <TextView
+            android:id="@+id/friend_country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/friend_gender"
+            android:layout_marginLeft="14dip"
+            android:layout_toRightOf="@id/friend_gender"
+            android:text="美国"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/friend_brief"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/friend_name"
+            android:layout_below="@id/friend_country"
+            android:layout_marginTop="5dip"
+            android:text="简介: 洛杉矶湖人队"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/friend_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/friend_name"
+            android:layout_below="@id/friend_brief"
+            android:layout_marginTop="5dip"
+            android:text="标签: MVP  #24  总冠军"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:id="@+id/r"
+            android:layout_width="fill_parent"
+            android:layout_height="65dip"
+            android:layout_below="@id/friend_tag" >
+
+            <LinearLayout
+                android:id="@+id/friend_blog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/friend_blog_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:layout_marginTop="8dip"
+                    android:focusable="false"
+                    android:text="微博"
+                    android:textColor="#343434"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/friend_blog_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:layout_marginTop="8dip"
+                    android:focusable="false"
+                    android:text="5"
+                    android:textColor="#343434"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/friend_blog"
+                android:src="@drawable/block" />
+
+            <ImageView
+                android:id="@+id/ce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/block" />
+
+            <LinearLayout
+                android:id="@+id/friend_fan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/ce"
+                android:clickable="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/friend_fan_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:layout_marginTop="8dip"
+                    android:text="粉丝"
+                    android:textColor="#343434"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/friend_fan_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:layout_marginTop="8dip"
+                    android:focusable="false"
+                    android:text="5"
+                    android:textColor="#343434"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/friend_care"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/ce"
+                android:clickable="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/friend_care_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    android:layout_marginTop="8dip"
+                    android:text="关注"
+                    android:textColor="#343434"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/friend_care_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:layout_marginTop="8dip"
+                    android:focusable="false"
+                    android:text="5"
+                    android:textColor="#343434"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/friend_fan"
+                android:src="@drawable/block" />
+
+            <TextView
+                android:id="@+id/friend_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/friend_fan"
+                android:layout_marginLeft="20dip"
+                android:layout_marginTop="8dip"
+                android:layout_toRightOf="@id/friend_fan"
+                android:text="详细\n资料"
+                android:textColor="#343434"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="13dip"
+            android:visibility="invisible" 
+            android:layout_below="@id/r">
+        </View>
+    </RelativeLayout>
+
+    <com.hudson.thinksns.diyview.xlistview.XListView
+        android:id="@+id/friend_blog_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/firstlay"
+        android:background="#FFFFFF"
+        android:dividerHeight="1dp"
+        android:fadingEdge="none"
+        android:scrollingCache="false"
+        android:visibility="visible" />
+
+</RelativeLayout>

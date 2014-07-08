@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6"  >
+    <ImageView
+        android:id="@+id/inform_system_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/homeblog_setting_topbar" />
+
+    <Button
+        android:id="@+id/inform_system_btn_backup"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="3dip"
+        android:background="@drawable/btn_backup" />
+
+    <TextView
+        android:id="@+id/inform_system_topname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dip"
+        android:layout_centerHorizontal="true"
+        android:text="系统消息"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/inform_system_topblank"
+        android:layout_width="match_parent"
+        android:layout_height="5dip"
+        android:layout_below="@+id/inform_system_topbar"
+        android:background="#e6e6e6" />
+    
+    <ListView
+        android:id="@+id/inform_system_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:layout_marginTop="4dip"
+        android:background="#ffffff"
+        android:layout_below="@+id/inform_system_topblank" >
+    </ListView>
+    
+
+</RelativeLayout>

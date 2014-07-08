@@ -1,0 +1,434 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/selfhome_topbar_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/homeblog_topbar" >
+
+        <Button
+            android:id="@+id/selfhome_back"
+            android:layout_width="34dip"
+            android:layout_height="34dip"
+            android:layout_margin="10dip"
+            android:background="@drawable/fans_back" />
+
+        <TextView
+            android:id="@+id/selfhome_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="15dip"
+            android:textColor="#dfdfdf"
+            android:text="我的主页"
+            android:textSize="21sp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/vi"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_below="@id/selfhome_topbar_rl"
+        android:background="#000000" />
+
+    <RelativeLayout
+        android:id="@+id/firstlay"
+        android:layout_width="fill_parent"
+        android:layout_height="230dip"
+        android:layout_below="@id/vi"
+        android:background="#7fdbf0" >
+
+        <ImageView
+            android:id="@+id/selfhome_photo"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_margin="18dip"
+            android:background="#000000" />
+
+        <TextView
+            android:id="@+id/selfhome_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/selfhome_photo"
+            android:layout_marginTop="2dip"
+            android:layout_toRightOf="@id/selfhome_photo"
+            android:text="Kobe "
+            android:textColor="#000000"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:id="@+id/selfhome_gender"
+            android:layout_width="58dip"
+            android:layout_height="23dip"
+            android:layout_alignLeft="@id/selfhome_name"
+            android:layout_below="@id/selfhome_name"
+            android:layout_marginTop="7dip"
+            android:src="@drawable/fans_sex_boy" />
+
+        <TextView
+            android:id="@+id/selfhome_country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/selfhome_gender"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@id/selfhome_gender"
+            android:text="美国"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <!--
+             <TextView
+            android:id="@+id/selfhome_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/selfhome_gender"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@id/selfhome_country"
+            
+                        android:text="洛杉矶"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        -->
+
+        <TextView
+            android:id="@+id/selfhome_brief"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/selfhome_name"
+            android:layout_below="@id/selfhome_country"
+            android:layout_marginTop="7dip"
+            android:text="简介: 洛杉矶湖人队"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/selfhome_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/selfhome_name"
+            android:layout_below="@id/selfhome_brief"
+            android:layout_marginTop="7dip"
+            android:text="标签: MVP  #24  总冠军"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="65dip"
+            android:layout_below="@id/selfhome_tag" >
+
+            <LinearLayout
+                android:id="@+id/selfhome_blog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/selfhome_blog_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:layout_marginTop="8dip"
+                    android:focusable="false"
+                    android:text="微博"
+                    android:textColor="#343434"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/selfhome_blog_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:layout_marginTop="4dip"
+                    android:focusable="false"
+                    android:text="5"
+                    android:textColor="#343434"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/selfhome_blog"
+                android:src="@drawable/block" />
+
+            <ImageView
+                android:id="@+id/ce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/block" />
+
+            <LinearLayout
+                android:id="@+id/selfhome_fan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/ce"
+                android:clickable="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/selfhome_fan_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:layout_marginTop="8dip"
+                    android:text="粉丝"
+                    android:textColor="#343434"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/selfhome_fan_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:layout_marginTop="4dip"
+                    android:focusable="false"
+                    android:text="5"
+                    android:textColor="#343434"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/selfhome_care"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/ce"
+                android:clickable="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/selfhome_care_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:layout_marginTop="8dip"
+                    android:text="关注"
+                    android:textColor="#343434"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/selfhome_care_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:layout_marginTop="4dip"
+                    android:focusable="false"
+                    android:text="5"
+                    android:textColor="#343434"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/selfhome_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginTop="8dip"
+                android:layout_toRightOf="@id/selfhome_fan"
+                android:text="详细\n资料"
+                android:textColor="#343434"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/selfhome_fan"
+                android:src="@drawable/block" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.hudson.thinksns.diyview.xlistview.XListView
+        android:id="@+id/self_home_blog_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/firstlay"
+        android:background="#FFFFFF"
+        android:dividerHeight="1dp"
+        android:fadingEdge="none"
+        android:scrollingCache="false"
+        android:visibility="invisible" />
+
+
+        <LinearLayout
+            android:id="@+id/self_home_fun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"     
+            android:layout_below="@id/firstlay"       
+            android:layout_marginTop="20dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/selfhome_myphoto_linear"
+                android:layout_width="match_parent"
+                android:layout_height="68dip"
+                android:layout_marginTop="10dip"
+                android:clickable="true"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/selfhome_myphoto"
+                    android:layout_width="36dip"
+                    android:layout_height="36dip"
+                    android:layout_margin="15dip"
+                    android:focusable="false"
+                    android:src="@drawable/self_home_myphoto" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19dip"
+                    android:focusable="false"
+                    android:text="@string/self_center_photoset"
+                    android:textColor="#363636"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/selfhome_myphoto_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="19dip"
+                    android:focusable="false"
+                    android:text="(5555)"
+                    android:textColor="#898989"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="#cecece" />
+
+            <LinearLayout
+                android:id="@+id/selfhome_mylove_linear"
+                android:layout_width="match_parent"
+                android:layout_height="68dip"
+                android:clickable="true"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/selfhome_myphoto2"
+                    android:layout_width="36dip"
+                    android:layout_height="36dip"
+                    android:layout_margin="15dip"
+                    android:focusable="false"
+                    android:src="@drawable/self_home_mylove" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19dip"
+                    android:focusable="false"
+                    android:text="@string/self_center_collection_topname"
+                    android:textColor="#363636"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="#cecece"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/selfhome_good_linear"
+                android:layout_width="match_parent"
+                android:layout_height="68dip"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/selfhome_myphoto3"
+                    android:layout_width="36dip"
+                    android:layout_height="36dip"
+                    android:layout_margin="15dip"
+                    android:focusable="false"
+                    android:src="@drawable/self_home_good" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19dip"
+                    android:focusable="false"
+                    android:text="@string/self_center_goodblog_topname"
+                    android:textColor="#363636"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="#cecece"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/self_mycard_linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="68dip"
+                android:layout_marginTop="15dip"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/selfhome_myphoto4"
+                    android:layout_width="36dip"
+                    android:layout_height="36dip"
+                    android:layout_margin="15dip"
+                    android:focusable="false"
+                    android:src="@drawable/self_home_mycard" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19dip"
+                    android:focusable="false"
+                    android:text="@string/self_center_card_topname"
+                    android:textColor="#363636"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="#cecece" />
+        </LinearLayout>
+   
+    <!-- 点击微博，在下面的区域显示微博list -->
+    <!-- 个人中心微博页面显示微博跟首页显示微博格式相同，共用listitem -->
+
+    <ListView
+        android:id="@+id/selfhome__microblog_statelist"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/firstlay"
+        android:visibility="gone" >
+    </ListView>
+
+</RelativeLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" android:background="@drawable/bg"
+  android:orientation="vertical"
+    android:focusable="true"  
+    android:focusableInTouchMode="true"
+  >
+  
+  <!-- 顶部  -->
+	<TextView android:id="@+id/write_label_tencent" android:layout_width="fill_parent"
+	android:layout_height="50dp" android:background="@drawable/label_top"
+	android:text="" android:textColor="#FFFFFF"
+	android:textSize="20dip" android:gravity="center"/>
+  
+  <!-- 提示  -->
+  <TextView android:id="@+id/tishi" android:layout_width="fill_parent"
+  android:layout_height="wrap_content" android:text="@string/tishi"
+  android:textSize="18dip" android:textColor="#999999"
+  android:gravity="right" android:layout_margin="5dp"/>
+  
+  <LinearLayout 
+  android:id="@+id/writelinear"
+  android:orientation="vertical" 
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content" 
+  android:background="@drawable/style_border">
+  
+  <!-- 输入框  -->
+  <AutoCompleteTextView 
+  android:id="@+id/statuscontent"
+  android:layout_width="fill_parent"
+  android:layout_height="260dp" 
+  android:layout_marginTop="10dp"
+  android:layout_marginLeft="10dp" 
+  android:layout_marginRight="10dp"
+  android:layout_marginBottom="8dp"
+  android:gravity="top"
+
+  
+  />
+  
+  <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  android:orientation="horizontal" android:layout_marginBottom="10dp">
+   <!-- 图片框  -->
+  <ImageView 
+  android:id="@+id/tupian" 
+  android:layout_width="30dp"
+  android:layout_height="30dp" 
+  android:background="@drawable/tupian"
+  android:visibility="gone"
+  android:layout_marginLeft="20dp"></ImageView>
+  <!-- 表情图标  -->
+  <ImageButton android:id="@+id/biaoqing" android:layout_width="30dp"
+  android:layout_height="30dp" android:background="@drawable/compose_emoticonbutton_background"
+  android:layout_marginLeft="20dp"></ImageButton>
+  <!-- 上传图片图标  -->
+  <ImageButton android:id="@+id/shangchuan" android:layout_width="30dp"
+  android:layout_height="30dp" android:background="@drawable/tupian"
+  android:layout_marginLeft="20dp"></ImageButton>
+  <!-- 发布按钮  -->
+  <Button android:id="@+id/fabu" android:background="@drawable/button_fabu"
+  android:layout_width="wrap_content" android:layout_height="30dp"
+  android:text="@string/fabu" android:layout_marginLeft="100dp"></Button>
+  </LinearLayout>
+  
+  </LinearLayout>
+  
+  <LinearLayout android:layout_weight="1"
+  android:layout_width="fill_parent" android:layout_height="wrap_content"></LinearLayout>
+  
+  <!-- 底部菜单栏  -->
+	<LinearLayout android:orientation="horizontal" android:id="@+id/menu"
+	android:background="@drawable/label_bottom" android:layout_width="fill_parent"
+	android:layout_height="50dp">
+	
+	<!-- 首页  -->
+	<LinearLayout android:id="@+id/shouye" android:orientation="vertical"
+	android:layout_weight="1" android:layout_height="fill_parent"
+	android:layout_width="wrap_content" android:gravity="center" 
+	android:background="@drawable/selector_tencent">
+	<ImageView android:id="@+id/shouyetu" android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:background="@drawable/shouye"/>
+	<TextView android:id="@+id/shouyezi" android:layout_width="fill_parent"
+	android:layout_height="wrap_content" android:text="@string/shouye"
+	android:textColor="#FFFFFF" android:gravity="center" android:textSize="15dip" android:textStyle="bold"/>
+	</LinearLayout>
+	
+	<!-- 发微博  -->
+	<LinearLayout android:id="@+id/faweibo" android:orientation="vertical"
+	android:layout_weight="1" android:layout_height="fill_parent"
+	android:layout_width="wrap_content" android:gravity="center"
+	android:background="@drawable/press_background">
+	<ImageView android:id="@+id/faweibotu" android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:background="@drawable/write"/>
+	<TextView android:id="@+id/faweibozi" android:layout_width="fill_parent"
+	android:layout_height="wrap_content" android:text="@string/faweibo"
+	android:textColor="#FFFFFF" android:gravity="center" android:textSize="15dip" android:textStyle="bold"/>
+	</LinearLayout>
+	
+	<!-- 消息  -->
+	<LinearLayout android:id="@+id/message" android:orientation="vertical"
+	android:layout_weight="1" android:layout_height="fill_parent"
+	android:layout_width="wrap_content" android:gravity="center"
+	android:background="@drawable/selector_tencent">
+	<ImageView android:id="@+id/messagetu" android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:background="@drawable/message"/>
+	<TextView android:id="@+id/messagezi" android:layout_width="fill_parent"
+	android:layout_height="wrap_content" android:text="@string/message"
+	android:textColor="#FFFFFF" android:gravity="center" android:textSize="15dip" android:textStyle="bold"/>
+	</LinearLayout>
+	
+	<!-- 刷新  -->
+	<LinearLayout android:id="@+id/shuaxin" android:orientation="vertical"
+	android:layout_weight="1" android:layout_height="fill_parent"
+	android:layout_width="wrap_content" android:gravity="center"
+	android:background="@drawable/selector_tencent">
+	<ImageView android:id="@+id/shuaxintu" android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:background="@drawable/shuaxin"/>
+	<TextView android:id="@+id/shuaxinzi" android:layout_width="fill_parent"
+	android:layout_height="wrap_content" android:text="@string/shuaxin"
+	android:textColor="#FFFFFF" android:gravity="center" android:textSize="15dip" android:textStyle="bold"/>
+	</LinearLayout>
+	
+	<!-- 更多  -->
+	<LinearLayout android:id="@+id/more" android:orientation="vertical"
+	android:layout_weight="1" android:layout_height="fill_parent"
+	android:layout_width="wrap_content" android:gravity="center"
+	android:background="@drawable/selector_tencent">
+	<ImageView android:id="@+id/moretu" android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:background="@drawable/more"/>
+	<TextView android:id="@+id/morezi" android:layout_width="fill_parent"
+	android:layout_height="wrap_content" android:text="@string/more"
+	android:textColor="#FFFFFF" android:gravity="center" android:textSize="15dip" android:textStyle="bold"/>
+	</LinearLayout>	
+	</LinearLayout>
+	
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/menu_chat_message_headphoto"
+        android:layout_width="70dip"
+        android:layout_height="70dip"
+        android:layout_margin="10dip"
+        android:background="#e6e6e6" />
+
+    <TextView
+        android:id="@+id/menu_chat_message_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/menu_chat_message_headphoto"
+        android:layout_margin="1dip"
+        android:layout_toRightOf="@+id/menu_chat_message_headphoto"
+        android:text="我的名字叫傻蛋"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/menu_chat_message_content"
+        android:layout_width="wrap_content"
+        android:layout_height="22dip"
+        android:layout_alignLeft="@+id/menu_chat_message_name"
+        android:layout_below="@+id/menu_chat_message_name"
+        android:layout_margin="3dip"
+        android:text="测试内容测试测试测试测试策"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/menu_chat_message_time"
+        android:layout_width="wrap_content"
+        android:layout_height="10dip"
+        android:layout_alignBottom="@+id/menu_chat_message_headphoto"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/menu_chat_message_content"
+        android:layout_marginRight="15dip"
+        android:text="2014-06-03 13:38:10"
+        android:textColor="#000000"
+        android:textSize="10sp" />
+    
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_below="@id/menu_chat_message_headphoto"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6" >
+
+    <ImageView
+        android:id="@+id/menu_chat_sendpletter_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/homeblog_setting_topbar" />
+
+    <Button
+        android:id="@+id/menu_chat_sendpletter_btn_backup"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="4dip"
+        android:background="@drawable/btn_backup" />
+
+    <TextView
+        android:id="@+id/menu_chat_sendpletter_topname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dip"
+        android:layout_centerHorizontal="true"
+        android:text="选择联系人"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/menu_chat_sendpletter_topblank"
+        android:layout_width="match_parent"
+        android:layout_height="5dip"
+        android:layout_below="@+id/menu_chat_sendpletter_topbar"
+        android:background="#e6e6e6" />
+
+    <RelativeLayout
+        android:id="@+id/menu_chat_sendpletter_findbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menu_chat_sendpletter_topblank"
+        android:background="#e6e6e6" >
+
+        <ImageView
+            android:id="@+id/menu_chat_sendpletter_bar"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:background="@drawable/homeblog_setting_topbar" 
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/menu_chat_sendpletter_audio"
+            android:layout_width="70dip"
+            android:layout_height="35dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="5dip"
+            android:text="搜索"
+            android:visibility="gone"
+            android:background="@drawable/btn_cancel" />
+
+        <ImageView
+            android:id="@+id/menu_chat_sendpletter_inputbar"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="7dip"
+            android:layout_marginRight="5dip"
+            android:visibility="gone"
+            android:layout_alignTop="@id/menu_chat_sendpletter_audio"
+            android:layout_toLeftOf="@id/menu_chat_sendpletter_audio"
+            android:background="@drawable/finding_inputbar" />
+
+        <EditText
+            android:id="@+id/menu_chat_sendpletter_input_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/menu_chat_sendpletter_inputbar"
+            android:layout_alignLeft="@id/menu_chat_sendpletter_inputbar"
+            android:layout_marginBottom="8dip"
+            android:layout_marginLeft="32dip"
+            android:visibility="gone"
+            android:layout_marginRight="8dip"
+            android:layout_toLeftOf="@id/menu_chat_sendpletter_audio"
+            android:background="#00000000"
+            android:hint="@string/menu_finding_hint"
+            android:singleLine="true"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/menu_chat_sendpletter_linkmantext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menu_chat_sendpletter_findbar"
+        android:layout_margin="8dip"
+        android:text="所有联系人"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <ListView
+        android:id="@+id/menu_chat_sendpletter_linkmanlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/menu_chat_sendpletter_linkmantext" >
+    </ListView>
+
+</RelativeLayout>

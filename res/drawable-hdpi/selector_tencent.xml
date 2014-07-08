@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 动态改变控件背景  -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!-- 点击时改变颜色  -->
+<item android:state_pressed="true" android:drawable="@drawable/press_background"/>
+
+<!--  选中时的颜色 -->  
+<item android:state_selected="true" android:drawable="@drawable/press_background"/>
+   
+</selector>
+

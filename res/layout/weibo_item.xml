@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="14dip"
+    android:background="#ffffff" >
+
+    <ImageView
+        android:id="@+id/homeblog_state_userpic"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_margin="10dip"
+        android:background="#000000" />
+
+    <TextView
+        android:id="@+id/homeblog_state_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/homeblog_state_userpic"
+        android:layout_marginLeft="3dip"
+        android:layout_toRightOf="@id/homeblog_state_userpic"
+        android:text="AAAAAA"
+        android:textColor="#246183"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/homeblog_state_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/homeblog_state_userpic"
+        android:layout_alignLeft="@id/homeblog_state_username"
+        android:text="04-21 14:25"
+        android:textColor="#a6a6a6"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/homeblog_state_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/homeblog_state_userpic"
+        android:layout_marginLeft="5dip"
+        android:layout_toRightOf="@id/homeblog_state_date"
+        android:text="来自网站"
+        android:textColor="#a6a6a6"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/homeblog_state_contents"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/homeblog_state_userpic"
+        android:layout_below="@id/homeblog_state_userpic"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="10dip"
+        android:text="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <!-- 图片状态， 如果有图片则显示，目前设置为gone -->
+
+    <ImageView
+        android:id="@+id/homeblog_state_photos"
+        android:layout_width="120dip"
+        android:layout_height="140dip"
+        android:layout_below="@id/homeblog_state_contents"
+        android:layout_marginLeft="30dip"
+        android:layout_marginTop="8dip"        
+        android:background="#000000"
+        android:visibility="gone" />
+
+    <!-- 转发状态的布局。已设为gone，需要时更改即可 -->
+
+    <RelativeLayout
+        android:id="@+id/homeblog_state_resend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/homeblog_state_photos"
+        android:layout_marginTop="8dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="20dip"
+        android:background="#efefef"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/homeblog_resend_userpic"
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:layout_margin="10dip"
+            android:background="#000000" />
+
+        <TextView
+            android:id="@+id/homeblog_resend_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/homeblog_resend_userpic"
+            android:layout_marginLeft="3dip"
+            android:layout_toRightOf="@id/homeblog_resend_userpic"
+            android:text="AAAAAA"
+            android:textColor="#246183"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/homeblog_resend_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/homeblog_resend_userpic"
+            android:layout_alignLeft="@id/homeblog_resend_username"
+            android:text="04-21 14:25"
+            android:textColor="#a6a6a6"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/homeblog_resend_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/homeblog_resend_userpic"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/homeblog_resend_date"
+            android:text="来自网站"
+            android:textColor="#a6a6a6"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/homeblog_resend_contents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/homeblog_resend_userpic"
+            android:layout_below="@id/homeblog_resend_userpic"
+            android:layout_marginLeft="8dip"
+            android:text="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+            android:textColor="#a6a6a6"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/homeblog_resend_photos"
+            android:layout_width="120dip"
+            android:layout_height="140dip"
+            android:layout_below="@id/homeblog_resend_contents"
+            android:layout_marginLeft="30dip"
+            android:layout_marginTop="8dip"
+            android:background="#000000"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/vv"
+            android:layout_width="match_parent"
+            android:layout_height="13dip"
+            android:layout_below="@id/homeblog_resend_photos"
+            android:background="#00000000" />
+        <!--
+    <LinearLayout
+        android:id="@+id/rensend_homeblog_listitem_funbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vv"
+        android:layout_marginTop="2dip"
+       >
+
+        <LinearLayout
+            android:id="@+id/rensend_homeblog_resend_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dip"
+                android:background="@drawable/homeblog_resend_pic" />
+
+            <TextView
+                android:id="@+id/resend_homeblog_resend_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/homeblog_listitem_resend"
+                android:textColor="#256284"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rensend_homeblog_good_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dip"
+                android:background="@drawable/homeblog_good_pic" />
+
+            <TextView
+                android:id="@+id/resend_homeblog_digg_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/homeblog_listitem_good"
+                android:textColor="#256284"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rensend_homeblog_comment_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dip"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/homeblog_comment_pic" />
+
+            <TextView
+                android:id="@+id/resend_homeblog_comment_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/homeblog_listitem_comment"
+                android:textColor="#256284"
+                android:textSize="18sp" />
+        </LinearLayout>
+        -->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/homeblog_listitem_funbar"
+        android:layout_width="match_parent"
+        android:layout_height="35dip"
+        android:layout_below="@id/homeblog_state_resend"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/homeblog_listitem_funbar" >
+
+        <LinearLayout
+            android:id="@+id/homeblog_resend_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dip"
+                android:layout_marginLeft="18dip"
+                android:layout_marginRight="8dip"
+                android:layout_marginTop="8dip"
+                android:background="@drawable/homeblog_resend_pic" />
+
+            <TextView
+                android:id="@+id/homeblog_resend_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/homeblog_listitem_resend"
+                android:textColor="#256284"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/homeblog_good_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dip"
+                android:background="@drawable/homeblog_good_pic" />
+
+            <TextView
+                android:id="@+id/homeblog_digg_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/homeblog_listitem_good"
+                android:textColor="#256284"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/homeblog_comment_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dip"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/homeblog_comment_pic" />
+
+            <TextView
+                android:id="@+id/homeblog_comment_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/homeblog_listitem_comment"
+                android:textColor="#256284"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vaha"
+        android:layout_width="fill_parent"
+        android:layout_height="0.8dip"
+        android:layout_below="@id/homeblog_listitem_funbar"
+        android:background="#c5c5c5"
+        android:visibility="visible" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="12dip"
+        android:layout_below="@id/vaha"
+        android:background="#e6e6e6"
+        android:visibility="visible" />
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="normalText">
+       
+        <item name="android:textSize">14sp</item>
+    </style>
+    
+             <style name="book_cover_img">
+        <item name="android:layout_width">@dimen/book_cover_img_width</item>
+        <item name="android:layout_height">@dimen/book_cover_img_height</item>
+        <item name="android:layout_gravity">top|center</item>        
+        <item name="android:layout_marginTop">@dimen/book_cover_img_margin_top</item>
+        
+
+    </style> 
+    
+     <style name="title" parent="android:Theme">
+        <item name="android:windowTitleBackgroundStyle">@style/black</item>
+        <item name="android:windowTitleSize">50dip</item>
+    </style>
+    <style name="black">
+        <item name="android:background">@drawable/topbar</item>
+    </style>
+    
+    <style name="book_cover_txt">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">wrap_content</item> 
+        <item name="android:layout_gravity">top</item>
+        <item name="android:gravity">center</item>    
+        <item name="android:layout_marginTop">@dimen/book_cover_txt_margin_top</item>    
+        <item name="android:layout_marginLeft">@dimen/book_cover_txt_margin_left</item>
+        
+        <item name="android:clickable">false</item> 
+        <item name="android:focusable">false</item> 
+        <item name="android:freezesText">true</item> 
+        
+        <item name="android:textSize">@dimen/book_cover_txt_text_size</item>
+        <item name="android:textColor">#000000</item>        
+    </style>
+       <style name="radiobutton">
+        <item name="android:button">@null</item>
+    </style>
+</resources>

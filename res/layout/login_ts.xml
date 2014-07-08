@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bground_login" >
+
+    
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:text="@string/login_register_link"
+        
+        android:layout_marginTop="65dip"
+        android:textSize="16sp" />
+    
+    <RelativeLayout
+        android:id="@+id/login_div"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textView1"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/background_login_div"
+        android:padding="12dip" >
+
+        <!-- 账号 -->
+
+        <TextView
+            android:id="@+id/login_user_input"
+            style="@style/normalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:text="@string/login_label_username" />
+
+        <EditText
+            android:id="@+id/username_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_user_input"
+            android:hint="@string/login_username_hint"
+            android:inputType="text"
+            android:singleLine="true" />
+        <!-- 密码 text -->
+
+        <TextView
+            android:id="@+id/login_password_input"
+            style="@style/normalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username_edit"
+            android:layout_marginTop="3dp"
+            android:text="@string/login_label_password" />
+
+        <EditText
+            android:id="@+id/password_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_password_input"
+            android:hint="@string/login_password_hint"
+            android:inputType="textPassword"
+            android:password="true"
+            android:singleLine="true" />
+        
+        
+        
+        <!-- 登录button -->
+
+        <Button
+            android:id="@+id/signin_button"
+            android:layout_width="70dip"
+            android:layout_height="38dip"
+            android:layout_alignRight="@id/password_edit"
+            android:layout_below="@id/password_edit"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/background_login_div"
+            android:text="@string/login_label_signin" />
+        
+        <Button
+            android:id="@+id/registration_button"
+            android:layout_width="70dip"
+            android:layout_height="38dip"
+            android:layout_alignLeft="@id/password_edit"
+            android:layout_below="@id/password_edit"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/background_login_div"
+            android:text="@string/login_label_registration" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

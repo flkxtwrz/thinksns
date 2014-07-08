@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 私信对方的listitem ，，未设置填充 -->
+
+    <ImageView
+        android:id="@+id/private_msg_coming_userpic"
+        android:layout_width="45dip"
+        android:layout_height="45dip"
+        android:layout_margin="14dip"
+        android:background="#000000" />
+    
+    <TextView
+        android:id="@+id/private_msg_coming_msg" 
+        android:layout_toRightOf="@id/private_msg_coming_userpic"        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AAAAAAAAAAAAAAAA"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/chat_context_bg_left"/>
+
+</RelativeLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6" >
+
+    <ImageView
+        android:id="@+id/sign_up_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/homeblog_setting_topbar" />
+
+    <ImageView
+        android:id="@+id/sign_up_back"
+        android:layout_width="42dip"
+        android:layout_height="35dip"
+        android:layout_margin="5dip"
+        android:background="@drawable/setting_back_btn" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dip"
+        android:text="@string/sign_up_topname"
+        android:textColor="#5b5b5b"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/sign_up_topblank"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_below="@+id/sign_up_topbar"
+        android:background="#e6e6e6" />
+
+    <View
+        android:id="@+id/sign_up_leftblank"
+        android:layout_width="20dip"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/sign_up_topblank"
+        android:background="#e6e6e6" />
+
+    <View
+        android:id="@+id/sign_up_rightblank"
+        android:layout_width="20dip"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/sign_up_topblank"
+        android:background="#e6e6e6" />
+    <!-- 背景图片放置在drawable-mdpi -->
+
+    <RelativeLayout
+        android:id="@+id/sign_up_do"
+        android:layout_width="match_parent"
+        android:layout_height="170dip"
+        android:layout_below="@+id/sign_up_topblank"
+        android:layout_toLeftOf="@id/sign_up_rightblank"
+        android:layout_toRightOf="@id/sign_up_leftblank"
+        android:background="@drawable/sign_up_bg" >
+
+        <LinearLayout
+            android:id="@+id/sign_up_dateweek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/sign_up_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2014.06.06"
+                android:textSize="23sp" />
+
+            <TextView
+                android:id="@+id/sign_up_week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/sign_up_date"
+                android:text="星期五"
+                android:textSize="23sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/sign_up_btn_backup"
+            android:layout_width="100dip"
+            android:layout_height="50dip"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="3dip"
+            android:background="#cdcdcd"
+            android:text="我要签到" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/sign_up_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sign_up_do"
+        android:layout_marginTop="10dip"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:background="@drawable/sign_day_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/sign_up_count_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已连续签到"
+            android:textSize="20sp" />
+        <!-- 连续计数 -->
+
+        <TextView
+            android:id="@+id/sign_up_con_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/sign_up_count_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:text="天"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/sign_up_totaltext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="累计签到"
+            android:textSize="20sp" />
+        <!-- 累计计数 -->
+
+        <TextView
+            android:id="@+id/sign_up_total_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/sign_up_totaltext2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="天"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</RelativeLayout>

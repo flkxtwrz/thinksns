@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bground_login" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="65dip"
+        android:text=""
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/registration_div"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="60dip"
+        android:background="@drawable/background_login_div"
+        android:padding="12dip" >
+
+        <!-- 账号 -->
+
+        <TextView
+            android:id="@+id/registration_user_input"
+            style="@style/normalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/registration_label_email"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/registration_username_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/registration_user_input"
+            android:hint="@string/login_username_hint"
+            android:inputType="text"
+            android:singleLine="true" />
+        <!-- 密码 text -->
+
+        <EditText
+            android:id="@+id/registration_password_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/registration_username_edit"
+            android:layout_below="@id/registration_username_edit"
+            android:layout_marginTop="8dip"
+            android:hint="@string/login_password_hint"
+            android:inputType="textPassword"
+            android:password="true"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/registration_password_input"
+            style="@style/normalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/registration_password_edit"
+            android:layout_marginTop="5dip"
+            android:layout_toLeftOf="@id/registration_password_edit"
+            android:text="@string/registration_label_password"
+            android:textSize="15sp" />
+        <!-- 确认密码 text -->
+
+        <EditText
+            android:id="@+id/registration_password_edit2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/registration_password_edit"
+            android:layout_below="@id/registration_password_edit"
+            android:layout_marginTop="8dip"           
+            android:hint="@string/login_password2_hint"
+            android:inputType="textPassword"
+            android:password="true"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/registration_password_input2"
+            style="@style/normalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/registration_password_edit2"
+            android:layout_marginTop="5dip"
+            android:text="@string/registration_label_password2"
+            android:textSize="15sp" />
+        <!-- 昵称 -->
+
+        <EditText
+            android:id="@+id/registration_name_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/registration_password_edit2"
+            android:layout_below="@id/registration_password_edit2"
+            android:layout_marginTop="8dip"            
+            android:hint="@string/login_name_hint"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/registration_name_input"
+            style="@style/normalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/registration_password_input2"
+            android:layout_alignTop="@id/registration_name_edit"
+            android:layout_marginTop="5dip"
+            android:text="@string/registration_label_name"
+            android:textSize="15sp" />
+        <!-- 性别 -->
+
+        <RadioGroup
+            android:id="@+id/registration_sex_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/registration_name_edit"
+            android:layout_below="@id/registration_name_edit"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/registration_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                 android:checked="true"
+                android:text="男" />
+
+            <RadioButton
+                android:id="@+id/registration_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="女" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/registration_sex_input"
+            style="@style/normalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/registration_name_input"
+            android:layout_alignTop="@id/registration_sex_check"
+            android:layout_marginTop="15dip"
+            android:text="@string/registration_label_sex"
+            android:textSize="15sp" />
+        <!-- 登录button -->
+
+        <Button
+            android:id="@+id/registration_button_cancel"
+            android:layout_width="70dip"
+            android:layout_height="38dip"
+            android:layout_alignRight="@id/registration_password_edit"
+            android:layout_below="@id/registration_sex_input"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="23dip"
+            android:background="@drawable/background_login_div"
+            android:text="@string/login_label_registration_cancel" />
+
+        <Button
+            android:id="@+id/registration_button"
+            android:layout_width="70dip"
+            android:layout_height="38dip"
+            android:layout_alignLeft="@id/registration_user_input"
+            android:layout_below="@id/registration_sex_input"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="23dip"
+            android:background="@drawable/background_login_div"
+            android:text="@string/login_label_registration" />
+    </RelativeLayout>
+
+</RelativeLayout>

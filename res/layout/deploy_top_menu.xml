@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="75dip"
+        android:layout_height="45dip"
+        android:layout_margin="10dip"
+        android:background="@drawable/btn_cancel"
+        android:text="取消"
+        android:textColor="#545454"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/faweibo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dip"
+        android:text="发微博"
+        android:textColor="#525252"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="75dip"
+        android:layout_height="45dip"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dip"
+        android:background="@drawable/btn_send"
+        android:text="发送"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+</RelativeLayout>

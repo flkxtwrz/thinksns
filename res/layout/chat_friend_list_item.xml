@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/chat_friend_list_headphoto"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_margin="10dip"
+        android:background="#e6e6e6" />
+
+    <TextView
+        android:id="@+id/chat_friend_list_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/chat_friend_list_headphoto"
+        android:layout_margin="1dip"
+        android:layout_toRightOf="@+id/chat_friend_list_headphoto"
+        android:text="我的名字叫傻蛋"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+    
+    <View 
+        android:layout_below="@id/chat_friend_list_headphoto"
+        android:layout_width="fill_parent"
+        android:layout_height="8dip"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

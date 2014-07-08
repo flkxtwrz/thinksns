@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6" >
+
+    <ImageView
+        android:id="@+id/setting_aboutsoft_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/homeblog_setting_topbar" />
+
+    <Button
+        android:id="@+id/setting_aboutsoft_btn_backup"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="3dip"
+        android:background="@drawable/setting_safe_backup" />
+
+    <TextView
+        android:id="@+id/setting_aboutsoft_topname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/setting_aboutsoft_btn_backup"
+        android:layout_alignBottom="@+id/setting_aboutsoft_btn_backup"
+        android:layout_centerHorizontal="true"
+        android:text="@string/setting_aboutsoft_topname"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+    
+    
+    <View
+        android:id="@+id/setting_aboutsoft_block"
+            android:layout_width="match_parent"
+            android:layout_height="20dip"
+            android:layout_below="@id/setting_aboutsoft_topbar" 
+             />
+    <TextView 
+	    	android:id="@+id/setting_aboutsoft_contents"
+	    	android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:layout_margin="15dip"
+	    	android:layout_below="@id/setting_aboutsoft_block"  
+	    	android:text="       本软件为ThinkSNS客户端，是借助于智士软件开源的开源微博、社交网络平台而建立起来的android客户端，支持多种常见屏幕大小和系统版本的android移动客户端。"
+	    	android:textColor="#555555"
+	    	android:textSize="18sp"
+	    	/>
+     <Button
+            android:id="@+id/app_checkupdate"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_below="@id/setting_aboutsoft_contents"
+            android:background="@drawable/homeblog_exitbtn_bar"
+            android:text="@string/soft_update_check"
+            android:layout_margin="15dip"
+            android:textColor="#ffffff" />
+
+</RelativeLayout>

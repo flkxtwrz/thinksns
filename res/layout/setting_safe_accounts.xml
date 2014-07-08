@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6" >
+    
+ 
+    <ImageView
+        android:id="@+id/setting_accounts_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/homeblog_setting_topbar" />
+
+    <Button
+        android:id="@+id/setting_accounts_btn_backup"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="3dip"
+        android:background="@drawable/setting_safe_backup" />
+
+    <TextView
+        android:id="@+id/setting_accounts_topname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/setting_accounts_btn_backup"
+        android:layout_alignBottom="@+id/setting_accounts_btn_backup"
+        android:layout_centerHorizontal="true"
+        android:text="@string/setting_accounts_topname"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/setting_accounts_block1"
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:layout_below="@id/setting_accounts_topbar"
+        android:background="#e6e6e6" />
+
+    <RelativeLayout
+        android:id="@+id/setting_accounts_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dip"
+        android:layout_below="@id/setting_accounts_block1"
+        android:background="#7fdbf0" >
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:layout_margin="10dip"
+            android:src="@drawable/kobe" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/photo"
+            android:layout_marginTop="5dip"
+            android:layout_toRightOf="@id/photo"
+            android:text="Kobe Bryant"
+            android:textColor="#000000"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/name"
+            android:layout_below="@id/name"
+            android:layout_marginLeft="5dip"
+            android:text="(kong…@sina.cn)"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dip"
+            android:layout_below="@id/photo" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/setting_accounts_lasttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setting_accounts_info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="#e6e6e6"
+        android:gravity="center_horizontal"
+        android:text="—-—上次登录： 2014年5月17日 00:08:07—-—"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/setting_accounts_lasttime"
+        android:layout_margin="8dip"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dip"
+            android:background="#e6e6e6" />
+
+        <RelativeLayout
+            android:id="@+id/setting_accounts_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dip" >
+
+            <ImageView
+                android:id="@+id/safe_accounts_poffstate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="5dip"
+                android:background="@drawable/safe_accounts_offstate" />
+
+            <TextView
+                android:id="@+id/safe_accounts_pstrength"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/safe_accounts_poffstate"
+                android:layout_margin="1dip"
+                android:layout_marginLeft="5dip"
+                android:layout_toRightOf="@id/safe_accounts_poffstate"
+                android:text="@string/safe_accounts_pstrength"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/safe_accounts_pstrength"
+                android:layout_marginLeft="20dip"
+                android:layout_toRightOf="@id/safe_accounts_pstrength"
+                android:text="中"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/safe_accounts_btn_pedit"
+                android:layout_width="wrap_content"
+                android:layout_height="30dip"
+                android:layout_alignTop="@id/safe_accounts_poffstate"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dip"
+                android:text="修改"
+                android:textColor="#FF000FFF"
+                android:background="@drawable/safe_accounts_btn_edit" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:background="#e6e6e6" />
+
+        <RelativeLayout
+            android:id="@+id/setting_accounts_loginsquares"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dip" >
+
+            <ImageView
+                android:id="@+id/safe_accounts_lonstate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="5dip"
+                android:background="@drawable/safe_accounts_onstate" />
+
+            <TextView
+                android:id="@+id/safe_accounts_loginprotected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/safe_accounts_lonstate"
+                android:layout_margin="1dip"
+                android:layout_marginLeft="5dip"
+                android:layout_toRightOf="@id/safe_accounts_lonstate"
+                android:text="@string/safe_accounts_loginprotected"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/safe_accounts_loginprotected"
+                android:layout_marginLeft="20dip"
+                android:layout_toRightOf="@id/safe_accounts_loginprotected"
+                android:text="已设置"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/safe_accounts_btn_ledit"
+                android:layout_width="wrap_content"
+                android:layout_height="30dip"
+                android:layout_alignTop="@id/safe_accounts_lonstate"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dip"
+                android:text="修改"
+                android:textColor="#FF000FFF"
+                android:background="@drawable/safe_accounts_btn_edit" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:background="#e6e6e6" />
+
+        <RelativeLayout
+            android:id="@+id/setting_accounts_binding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dip" >
+
+            <ImageView
+                android:id="@+id/safe_accounts_boffstate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="5dip"
+                android:background="@drawable/safe_accounts_offstate" />
+
+            <TextView
+                android:id="@+id/safe_accounts_binding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/safe_accounts_boffstate"
+                android:layout_margin="1dip"
+                android:layout_marginLeft="5dip"
+                android:layout_toRightOf="@id/safe_accounts_boffstate"
+                android:text="@string/safe_accounts_binding"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/safe_accounts_binding"
+                android:layout_marginLeft="20dip"
+                android:layout_toRightOf="@id/safe_accounts_binding"
+                android:text="未绑定"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/safe_accounts_btn_bedit"
+                android:layout_width="wrap_content"
+                android:layout_height="30dip"
+                android:layout_alignTop="@id/safe_accounts_boffstate"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dip"
+                android:text="设置"
+                android:textColor="#FF000FFF"
+                android:background="@drawable/safe_accounts_btn_edit" />
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+</RelativeLayout>

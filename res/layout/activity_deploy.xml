@@ -1,0 +1,177 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".Deploy" >
+
+    <RelativeLayout
+        android:id="@+id/item_choose_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/frame"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/item_choose_layout"
+        android:background="@drawable/choosebar" >
+
+        <ImageView
+            android:id="@+id/btn_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="1dip"
+            android:src="@drawable/btn_1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="1dip"
+            android:src="@drawable/btn_2" />
+
+        <ImageView
+            android:id="@+id/btn_at"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/btn_3" />
+
+        <ImageView
+            android:id="@+id/emotionbut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/btn_4" />
+
+        <ImageView
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/btn_5" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/frame2"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_above="@id/frame"
+        android:background="#ffffff" >
+
+        <ImageView
+            android:id="@+id/left"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_marginLeft="15dip"
+            android:background="@drawable/left" />
+
+        <Button
+            android:id="@+id/medium"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_toRightOf="@id/left"
+            android:background="@drawable/medium"
+            android:text="石牌岭/街道口"
+            android:textColor="#537fb0" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_toRightOf="@id/medium"
+            android:background="@drawable/deploy_rim_right" />
+
+        <ImageView
+            android:id="@+id/right2"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dip"
+             android:visibility="gone"
+            android:background="@drawable/deploy_rim_right" />
+
+        <Button
+            android:id="@+id/medium2"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_toLeftOf="@id/right2"
+            android:background="@drawable/medium"
+            android:text="好友圈"
+            android:textColor="#f14b42"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/left2"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_toLeftOf="@id/medium2"
+             android:visibility="gone"
+            android:background="@drawable/left" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/resend_relayout"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:layout_above="@id/frame2"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/resend_pic"
+            android:layout_width="52dip"
+            android:layout_height="52dip"
+            android:layout_margin="5dip"
+            android:layout_marginLeft="5dip"
+            android:background="#000000"
+            android:src="@drawable/baiyan" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/resend_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/resend_pic"
+            android:layout_toRightOf="@id/resend_pic"
+            android:text="afs"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/resend_contents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/resend_username"
+            android:layout_below="@id/resend_username"
+            android:layout_marginTop="1dip"
+            android:text="AAAAA"
+            android:textColor="#787878"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/preview"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_above="@id/resend_relayout"
+        android:layout_marginLeft="5dip"
+        android:visibility="gone" >
+    </ImageView>
+
+    <EditText
+        android:id="@+id/blog_contents"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/preview"
+        android:background="#ffffff"
+        android:gravity="top"
+        android:hint="分享新鲜事..."
+        android:paddingLeft="10dip"
+        android:paddingTop="5dip" />
+
+</RelativeLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6" >
+
+    <ImageView
+        android:id="@+id/setting_inform_times_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/homeblog_setting_topbar" />
+
+    <Button
+        android:id="@+id/setting_inform_times_btn_backup"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="3dip"
+        android:background="@drawable/setting_safe_backup" />
+
+    <TextView
+        android:id="@+id/setting_inform_times_topname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/setting_inform_times_btn_backup"
+        android:layout_alignBottom="@+id/setting_inform_times_btn_backup"
+        android:layout_centerHorizontal="true"
+        android:text="免打扰时间"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+    <!--
+    <Button
+        android:id="@+id/setting_inform_times_btn_tomenu"
+        android:layout_width="35dip"
+        android:layout_height="35dip"
+        android:layout_alignBottom="@+id/setting_inform_times_btn_backup"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dip"
+        android:layout_marginRight="8dip"
+        android:text="确定"
+        android:background="@drawable/setting_safe_tomenu" />
+    -->
+
+    <View
+        android:id="@+id/setting_inform_times_blank1"
+        android:layout_width="match_parent"
+        android:layout_height="20dip"
+        android:layout_below="@+id/setting_inform_times_topbar"
+        android:background="#e6e6e6" />
+
+    <TextView
+        android:id="@+id/setting_inform_times_txtshow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setting_inform_times_blank1"
+        android:layout_marginLeft="60dip"
+        android:text="每日22:00-"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/setting_inform_times_txtshow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/setting_inform_times_txtshow1"
+        android:layout_below="@id/setting_inform_times_blank1"
+        android:text="次日8:00"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+
+    <View
+        android:id="@+id/setting_inform_times_blank2"
+        android:layout_width="match_parent"
+        android:layout_height="10dip"
+        android:layout_below="@+id/setting_inform_times_txtshow1"
+        android:layout_margin="5dip"
+        android:background="@drawable/blank_singleline" />
+
+    <TextView
+        android:id="@+id/setting_inform_times_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/setting_inform_times_btn_backup"
+        android:layout_below="@+id/setting_inform_times_blank2"
+        android:layout_margin="5dip"
+        android:text="开始时间:"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <TimePicker
+        android:id="@+id/setting_inform_timePicker_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setting_inform_times_start"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/setting_inform_times_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/setting_inform_times_start"
+        android:layout_below="@+id/setting_inform_timePicker_start"
+        android:layout_marginTop="10dip"
+        android:text="结束时间:"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <TimePicker
+        android:id="@+id/setting_inform_timePicker_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setting_inform_times_end"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

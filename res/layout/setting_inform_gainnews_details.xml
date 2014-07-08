@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6" >
+
+    <ImageView
+        android:id="@+id/setting_inform_gainnews_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/setting_safe_topbar" />
+
+    <Button
+        android:id="@+id/setting_inform_gainnews_btn_backup"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="3dip"
+        android:background="@drawable/setting_safe_backup" />
+
+    <TextView
+        android:id="@+id/setting_inform_gainnews_topname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/setting_inform_gainnews_btn_backup"
+        android:layout_alignBottom="@+id/setting_inform_gainnews_btn_backup"
+        android:layout_centerHorizontal="true"
+        android:text="获取新消息"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/setting_inform_gainnews_btn_tomenu"
+        android:layout_width="35dip"
+        android:layout_height="35dip"
+        android:layout_alignBottom="@+id/setting_inform_gainnews_btn_backup"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dip"
+        android:layout_marginRight="8dip"
+        android:background="@drawable/setting_safe_tomenu" />
+
+    <View
+        android:id="@+id/setting_inform_gainnews_blank1"
+        android:layout_width="match_parent"
+        android:layout_height="20dip"
+        android:layout_below="@+id/setting_inform_gainnews_topbar"
+        android:background="#e6e6e6" />
+
+    <Spinner
+        android:id="@+id/setting_inform_gainnewsitems"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_below="@id/setting_inform_gainnews_blank1"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:background="@drawable/setting_item_bg"
+        android:entries="@array/gainnewsitems" />
+    <!--
+    <RadioGroup
+        android:id="@+id/setting_inform_gainnews_rg"
+        android:layout_below="@+id/setting_inform_gainnews_blank1"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/setting_inform_gainnews_rb1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="每1分钟"
+            android:textSize="25sp" 
+            android:textcolor="#000000" 
+            android:background="#FFFFFF"/>
+
+        <RadioButton
+            android:id="@+id/setting_inform_gainnews_rb2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="每2分钟"
+            android:textSize="25sp" />
+
+        <RadioButton
+            android:id="@+id/setting_inform_gainnews_rb5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="每5分钟"
+            android:textSize="25sp" />
+
+        <RadioButton
+            android:id="@+id/setting_inform_gainnews_rbno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="不获取"
+            android:textSize="25sp" />
+    </RadioGroup>
+    -->
+
+</RelativeLayout>

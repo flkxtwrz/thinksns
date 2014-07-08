@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6" >
+        <ImageView
+        android:id="@+id/self_center_photoset_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/homeblog_setting_topbar" />
+
+    <Button
+        android:id="@+id/self_center_photoset_btn_backup"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="3dip"
+        android:background="@drawable/btn_backup" />
+
+    
+
+    <TextView
+        android:id="@+id/self_center_photoset_topname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dip"
+        android:layout_centerHorizontal="true"
+        android:text="@string/self_center_photoset"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/self_center_photoset_topblank"
+        android:layout_width="match_parent"
+        android:layout_height="5dip"
+        android:layout_below="@+id/self_center_photoset_topbar"
+        android:background="#e6e6e6" />
+  <GridView
+         android:cacheColorHint="#00000000"
+         android:id="@+id/self_photo_gridview"
+         android:layout_below="@id/self_center_photoset_topblank"
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:numColumns="3"
+         android:verticalSpacing="2dip"
+         android:horizontalSpacing="2dip"
+         android:stretchMode="columnWidth"
+         android:gravity="center"
+       
+         />
+
+</RelativeLayout>

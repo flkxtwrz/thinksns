@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="selecteditems">
+        <item>所有人</item>
+        <item>我关注的人</item>
+        <item>不提醒</item>
+    </string-array>
+    
+    <string-array name="gainnewsitems">
+        <item>每1分钟</item>
+        <item>每2分钟</item>
+        <item>每5分钟</item>
+        <item>不获取</item>
+    </string-array>
+
+</resources>
